@@ -112,8 +112,13 @@ public class first {
 		System.out.println(t3);
 		SimpleDateFormat dformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String t4 = dformat.format(date);
-		Thread.sleep(5000);
-		System.out.println(t4);
+		try {
+			Thread.sleep(5000);
+			System.out.println(t4);
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
 	}
 
 	private static String getType(Object test) {
